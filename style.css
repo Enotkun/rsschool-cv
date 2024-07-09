@@ -8,12 +8,20 @@
     max-width: 100%;
   }
 
+  :root {
+    --color-secondary: #01796f;
+  }
+
   body {
     font-family: sans-serif;
     min-height: 100vh;
     margin: 0;
     padding: 0;
     font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .container {
@@ -23,38 +31,43 @@
   }
 
   .header {
-    background-color: #d7ba5f;
+    background-color: var(--color-secondary);
     height: 20%;
     font-weight: 400;
   }
 
   .header-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .header-list a {
     display: block;
     font-weight: 600;
-    text-decoration: none;
     text-transform: uppercase;
     padding: 15px;
     color: #000000;
   }
 
   .header-list a:hover {
-    background-color: #74d718;
+    background-color: #01453f;
+    color: #ffffff;
   }
   
   .header-list a:focus,
   .header-list a:active {
     background-color: #3b494a;
-    outline: 2px solid #d7ba5f;
+    outline: 2px solid var(--color-secondary);
   }
 
   .about_me {
     display: flex;
     gap: 20px;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .about_me-avatar {
@@ -66,11 +79,76 @@
     text-transform: uppercase;
   }
 
+  .about_me-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "contacts projects"
+    "skills code "
+    "courses language";
+    column-gap: 20px;
+
+    background-color: #e5c398;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+.block_title {
+  text-align: center;
+  background-color: var(--color-secondary);
+  color: #ffffff;
+  border-left: 30px solid #464343;
+}
+
+.contacts {
+  grid-area: contacts;
+}
+
+.contacts_list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.contacts_list-link{
+  color: #000000;
+}
+
+.skills {
+  grid-area: skills;
+  font-weight: 600;
+}
+
+.code {
+  grid-area: code;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.courses {
+  grid-area: courses;
+}
+
+.language {
+  grid-area: language;
+}
+
   .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d7ba5f;
+    background-color: var(--color-secondary);
     height: 20%;
     color: #000000;
     font-weight: 400;
