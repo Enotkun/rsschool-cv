@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    list-style: none;
   }
 
   img {
@@ -8,6 +9,7 @@
   }
 
   body {
+    font-family: sans-serif;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -21,32 +23,30 @@
   }
 
   .header {
-    background-color: #1f1f1f;
+    background-color: #d7ba5f;
     height: 20%;
-    color: #d7ba5f;
     font-weight: 400;
   }
 
-  .header_list {
+  .header-list {
     display: flex;
-    list-style: none;
   }
 
-  .header_list a {
+  .header-list a {
     display: block;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px;
-    color: #d7ba5f;
+    color: #000000;
   }
 
-  .header_list a:hover {
-    background-color: #3b494a;
+  .header-list a:hover {
+    background-color: #74d718;
   }
   
-  .header_list a:focus,
-  .header_list a:active {
+  .header-list a:focus,
+  .header-list a:active {
     background-color: #3b494a;
     outline: 2px solid #d7ba5f;
   }
@@ -60,4 +60,32 @@
   .about_me-avatar {
     object-fit: cover;
     clip-path: circle(50%);
+  }
+
+  .block_title {
+    text-transform: uppercase;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d7ba5f;
+    height: 20%;
+    color: #000000;
+    font-weight: 400;
+  }
+
+  .list-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .link-rschool {
+    padding: 20px;    
+  }
+
+  .text-rschool {
+    padding: 20px;
   }
