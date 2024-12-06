@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header container">
+        <nav class="main_nav">
+            <ul class="header-list list">
+                <li class="list_item">
+                    <a class="list_link" href="#contacts">Contacts</a>
+                </li>
+                <li class="list_item">
+                    <a class="list_link" href="#">About me</a>
+                </li>
+                <li class="list_item">
+                    <a class="list_link" href="#skills">Skills</a>
+                </li>
+                <li class="list_item">
+                    <a class="list_link" href="#code">Code example</a>
+                </li>
+                <li class="list_item">
+                    <a class="list_link" href="#projects">My projects</a>
+                </li>
+                <li class="list_item">
+                    <a class="list_link" href="#courses">Completed courses</a>
+                </li>
+                <li class="list_item">
+                    <a class="list_link" href="#language">English level</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="about_me">
+            <img class="about_me-avatar" src="./img/my_avatar.jpg" width="250" height="250" alt="my avatar">
+            <div class="about_me-description">
+            <h1 class="about_me-greeting">Hi, I'm Anton Kasyanov.</h1>
+            <p class="about_me-text">Since school, I really like computers and the Internet, I also like to constantly learn something new, the IT sphere has become a gift for me in this regard. For the last year, I have been studying everything related to this, in particular the frontend.</p>
+            </div>
+        </div>
+    </header>
+    <main class="main container">
+        <section class="contacts" id="contacts">
+            <h2 class="block_title">Contacts</h2>
+            <ul class="contacts_list">
+                <li class="contacts_list-item">
+                    <img class="contacts_list-icon" alt="phone icon" src="./img/phone.svg" width="20" height="20">
+                    <a class="contacts_list-link" href="tel:89527555847">Phone:&nbsp;+7&nbsp;952&nbsp;755&nbsp;58&nbsp;47</a>
+                </li>
+                <li class="contacts_list-item">
+                    <img class="contacts_list-icon" alt="discord icon" src="./img/discord.svg" width="20" height="20">
+                    <a class="contacts_list-link" href="#">Discord(rs-school): Anton Kasyanov(@Enotkun)</a>
+                </li>
+                <li class="contacts_list-item">
+                    <img class="contacts_list-icon" alt="email icon" src="./img/mail.svg" width="20" height="20">
+                    <a class="contacts_list-link" href="mailto:kai070191@gmail.com">Email: kai070191@gmail.com</a>
+                </li>
+            </ul>
+        </section>
+        <section class="skills" id="skills">
+            <h2 class="block_title">Skills</h2>
+            <ul class="skills_list">
+                <li class="skills_list-item">HTML</li>
+                <li class="skills_list-item">CSS</li>
+                <li class="skills_list-item">SASS</li>
+                <li class="skills_list-item">Gulp</li>
+                <li class="skills_list-item">Git</li>
+                <li class="skills_list-item">JavaScript</li>
+            </ul>
+        </section>
+        <section class="code" id="code">
+            <h2 class="block_title">Code example</h2>
+            <div class="code-wrapper">
+            <pre ><code>
+            let a = 5;
+            for (let c = 0; c &lt; a; c++) {
+                console.log(c);
+            }
+            </code></pre>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="block_title">My projects</h2>
+            <ul class="projects__list">
+                <li class="projects-item">
+                    <a class="projects-link" href="https://enotkun.github.io/my_projects/Barbershop/">Barbershop «Borodinsky»</a>
+                </li>
+                <li class="projects-item">
+                    <a class="projects-link" href="https://enotkun.github.io/my_projects/Sedona/">Sedona</a>
+                </li>
+                <li class="projects-item">
+                    <a class="projects-link" href="https://enotkun.github.io/my_projects/cat_energy/dist">Cat Energy</a>
+                </li>
+                <li class="projects-item">
+                    <a class="projects-link" href="https://enotkun.github.io/my_projects/barbershop_2.0/docs">Barbershop «Borodinsky» version 2.0</a>
+                </li>
+                <li class="projects-item">
+                    <a class="projects-link" href="https://enotkun.github.io/my_projects/kropp-fitness">Kropp Fitness</a>
+                </li>
+                <li class="projects-item">
+                    <a class="projects-link" href="https://enotkun.github.io/my_projects/elegant_store/docs">Elegant Store</a>
+                </li>
+              </ul>
+        </section>
+        <section class="courses" id="courses">
+            <h2 class="block_title">Completed courses</h2>
+            <ul class="main-courses__list">
+                <li class="main-courses__item">
+                    HTML Academy
+                    <ol class="secondary-courses__list">
+                        <li class="secondary-courses__item">
+                            HTML and CSS. Professional website layout
+                        </li>
+                        <li class="secondary-courses__item">
+                            HTML and CSS. Adaptive layout and automation
+                        </li>
+                    </ol>
+                </li>
+                <li class="main-courses__item">
+                    RS School
+                    <ol class="secondary-courses__list">
+                        <li class="secondary-courses__item">
+                            JS/FE Pre-School 2024Q2(in proccess)
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section class="language" id="language">
+            <h2 class="block_title">English level</h2>
+            <p class="language-item"><b>English</b> - A1 (A2 in proccess)</p>
+        </section>
+    </main>
+    <footer class="footer container">
+        <ul class="list-social">
+            <li class="list-social__item">
+                <a class="list-social__link" href="https://github.com/Enotkun">
+                    <img class="soial-logo" src="./img/github-logo.svg" alt="logo github" height="64">
+                </a>
+            </li>
+            <li class="list-social__item">
+                <a class="list-social__link" href="https://web.telegram.org/k/">
+                    <img class="soial-logo" src="./img/telegram-logo.svg" alt="logo telegram" height="64">
+                </a>
+            </li>
+            <li class="list-social__item">
+                <a class="list-social__link" href="https://vk.com/enotkun_poloskun">
+                    <img class="social-logo" src="./img/vk-logo.svg" alt="logo vk" height="64">
+                </a>
+            </li>
+        </ul>
+        <a class="link-rschool" href="https://rs.school">
+            <img class="logo-rschool" src="./img/rschool-logo.svg" alt="logo rs-school" height="90">
+        </a>
+        <span class="text-rschool">Created in 2024</span>
+    </footer>
+</body>
+</html>
